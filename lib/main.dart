@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'core/theme/theme_data.dart';
 import 'presentation/routes/routes.dart';
 
 void main() {
@@ -13,9 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: router,
-      theme: ThemeData(
-        useMaterial3: false,
-      ),
+      theme: CustomThemeData.themeData,
     );
   }
 }
